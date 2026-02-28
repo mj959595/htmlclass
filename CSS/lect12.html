@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floating Form</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+    
+    }
+
+
+
+    div.container {
+        max-width: 600px;
+        margin:auto;
+    }
+
+    form{
+        background-color:#f1f1f1;
+        border-radius: 10px;
+        margin:10px;
+        padding: 20px;
+    }
+
+    .input-group{
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .input-group input{
+        width:100%;
+        padding: 20px 10px 10px 10px;
+        border: none;
+        border-bottom: 2px solid rgb(4, 104, 185);
+        background: transparent;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .input-group label{
+        position: absolute;
+        left: 10px;
+        top: 18px;
+        color: gray;
+        transition: 0.3s ease;
+        pointer-events: none;
+    }
+
+    /* When focused or filled */
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label{
+        top: -5px;
+        font-size: 12px;
+        color: green;
+    }
+
+    .input-group input:focus{
+        border-bottom: 2px solid green;
+    }
+
+    .txtSearch {
+        width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 10px 10px 10px 40px;
+  background-image: url(images/search.png);
+  background-repeat: no-repeat;
+  background-position:10px 10px;
+  transition: width 0.4s ease-in-out;
+    }
+
+    .txtSearch:focus{
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+              <div >
+            <input type="text" name="txtSeach" id="txtSeach" class="txtSearch" placeholder="Search">
+            
+        </div>
+
+    <form action="#">
+
+        <div class="input-group">
+            <input type="text" name="name" required placeholder=" ">
+            <label>Enter Name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="fathername" required placeholder=" ">
+            <label>Enter Father Name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="age" required placeholder=" ">
+            <label>Enter Age</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="address" required placeholder=" ">
+            <label>Enter Address</label>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .container .input-group label {
+            position: absolute;
+            left:10px;
+            top:18px;
+            color: gray;
+        transition: 0.3s ease;
+        pointer-events: none;
+        }
+        div.container {
+            max-width: 600px;
+            margin:auto;
+        }
+
+          .input-group{
+        position: relative;
+        margin: 20px 0;
+    }
+
+       .input-group input {
+            padding: 20px;
+            margin:10px;
+             border: none;
+    border-bottom: 2px solid rgb(4, 104, 185);
+    width:100%;
+    box-sizing: border-box;
+    background:transparent;
+        }
+
+            /* When focused or filled */
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label{
+        top: -5px;
+        font-size: 12px;
+        color: green;
+    }
+      .input-group input:focus{
+            outline: none;
+            border-bottom: 2px solid green;
+        }
+
+        form{
+            background-color:#f1f1f1;
+            border-radius: 10px;
+            margin:10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+ <div class="container">
+    <form action="#">
+
+        <div class="input-group">
+            <input type="text" name="name" required placeholder=" ">
+            <label>Enter Name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="fathername" required placeholder=" ">
+            <label>Enter Father Name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="age" required placeholder=" ">
+            <label>Enter Age</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="address" required placeholder=" ">
+            <label>Enter Address</label>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html> -->

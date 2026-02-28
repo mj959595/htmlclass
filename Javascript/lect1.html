@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="demo">About us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci voluptatem aspernatur maiores, beatae reprehenderit voluptas asperiores neque necessitatibus eveniet laboriosam dolorum, sed explicabo. Dicta sapiente quaerat quo. Fugiat, blanditiis?</p>
+    </div>
+    
+    <div>
+        <img id="img" src="images/flower1.png" alt="" style="width: 100px;">
+
+        <button onclick='document.getElementById("img").src="images/img_tree.png"'>Image 1</button>
+       <button onclick='document.getElementById("img").src="images/flower1.png"'>Image 2</button>
+    </div>
+
+     <button type="submit" onclick='document.getElementById("demo").innerHTML = "Contact us"'>Ok</button>
+
+     <button type="submit" onclick='document.getElementById("demo").style.display = "none"'>hide</button>
+    <button type="submit" onclick="myfun()">call fun</button>
+<script src="script.js"></script>
+
+   <script>
+        document.getElementById("demo").innerHTML = "Contact us";
+           document.getElementById("demo").style.fontSize="40px";
+            document.getElementById("demo").style.color="red";
+
+
+            function myfun(){
+                    console.log("my name is ali");
+            }
+
+            myfun();
+            
+    </script>
+</body>
+</html>
+  
+

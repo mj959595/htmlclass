@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+        .borderImage{
+            border:10px solid transparent;
+            padding:15px;
+            border-image: url(images/border.png) 30 round;
+            /* background:url(images/flower1.png),url(images/bgpaper.png);
+            background-position: right bottom,left top;
+            background-repeat: no-repeat,repeat; */
+            /* background-size: cover; */
+
+            background: url(images/flower1.png) right bottom no-repeat, url(images/bgpaper.png) left top repeat;
+        }
+
+         .borderStretch{
+            border:10px solid transparent;
+            padding:15px;
+            border-image: url(images/border.png) 30 stretch;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="borderImage">
+        <h1>About me</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla amet debitis ipsa necessitatibus quia laborum, vero quibusdam aperiam doloribus cum error vel placeat aliquam assumenda, quis eius, aliquid accusamus fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla amet debitis ipsa necessitatibus quia laborum, vero quibusdam aperiam doloribus cum error vel placeat aliquam assumenda, quis eius, aliquid accusamus fuga!</p>
+    </div>
+
+    <div class="borderStretch">
+        <h1>About me</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla amet debitis ipsa necessitatibus quia laborum, vero quibusdam aperiam doloribus cum error vel placeat aliquam assumenda, quis eius, aliquid accusamus fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla amet debitis ipsa necessitatibus quia laborum, vero quibusdam aperiam doloribus cum error vel placeat aliquam assumenda, quis eius, aliquid accusamus fuga!</p>
+    </div>
+</body>
+</html>

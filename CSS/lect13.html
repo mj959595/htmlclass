@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: "Section " counter(section) ":"
+        }
+
+        div {
+            font-size: 50px;
+        }
+     
+        p{
+            font-size:non-inherited;
+        }
+
+        h2 {
+            color:blue;
+        }
+        /* .heading {
+            color:red !important;
+        }
+        #about{
+            color:green;
+
+        } */
+    </style>
+</head>
+<body>
+    
+    <div>
+    <h2 style="color:green;">About us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non illo ipsam laboriosam laudantium, atque commodi quas voluptatem exercitationem sunt eos blanditiis iure quaerat? Quia accusamus asperiores in quos id?</p>
+</div>
+
+      <h2>Content us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non illo ipsam laboriosam laudantium, atque commodi quas voluptatem exercitationem sunt eos blanditiis iure quaerat? Quia accusamus asperiores in quos id?</p>
+      <h2>Projects</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non illo ipsam laboriosam laudantium, atque commodi quas voluptatem exercitationem sunt eos blanditiis iure quaerat? Quia accusamus asperiores in quos id?</p>
+      <h2>Resume</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non illo ipsam laboriosam laudantium, atque commodi quas voluptatem exercitationem sunt eos blanditiis iure quaerat? Quia accusamus asperiores in quos id?</p>
+</body>
+</html>

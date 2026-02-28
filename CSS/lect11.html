@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+            color: #fff;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 12px 12px 40px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .input-group input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .input-group input:focus {
+            background: rgba(255,255,255,0.3);
+            box-shadow: 0 0 8px rgba(255,255,255,0.5);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #fff;
+            color: #764ba2;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #f1f1f1;
+            transform: translateY(-2px);
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .login-link a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media(max-width: 400px) {
+            .container {
+                width: 90%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Account</h2>
+
+    <form>
+        <div class="input-group">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Full Name" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" required>
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+
+        <div class="login-link">
+            Already have an account? <a href="#">Login</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+<!-- 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #666666;
+    padding: 20px;
+}
+
+form {
+    background-color: #f2f2f2;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+select:hover {
+    border-color: rgb(10, 119, 243);
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+select:focus {
+    border-color: rgb(4, 209, 49);
+    outline: none;
+}
+
+input[type=submit]{
+    padding: 10px 5px;
+    background-color:green;
+    color:white;
+    margin:5px;
+    border-radius: 5px;
+    width: 160px;
+}
+
+input[type=reset]{
+    padding: 10px 5px;
+    background-color:#ff0000;
+    color:white;
+    margin:5px;
+    border-radius: 5px;
+    width: 160px;
+}
+</style>
+
+</head>
+<body>
+    
+ 
+        <div class="container">
+            <form action="#" method="post">
+
+                <div>
+               <label for="name">Username:</label>     
+               <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                
+                  <div>
+               <label for="email">Email:</label>     
+               <input type="email" name="email" id="email">
+                </div>
+
+
+                  <div>
+               <label for="password">Password:</label>     
+               <input type="password" name="password" id="password">
+                </div>
+
+                <div>
+                    <select name="role" id="role">
+                        <option value="admin">admin</option>
+                        <option value="user">user</option>
+                        <option value="manager">manager</option>
+                    </select>
+                </div>
+                <div style="text-align: center;margin-top:20px">
+                    <input type="submit" name="submit" id="submit" /> 
+                    <input type="reset" />
+                </div>
+            </form>
+        </div>
+</body>
+</html> -->

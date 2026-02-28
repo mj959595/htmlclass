@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css" integrity="sha512-DKdRaC0QGJ/kjx0U0TtJNCamKnN4l+wsMdION3GG0WVK6hIoJ1UPHRHeXNiGsXdrmq19JJxgIubb/Z7Og2qJww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        div.gallery{
+            display: flex;
+             flex-wrap: wrap;
+  justify-content: flex-start;
+        }
+        div.gallery-item {
+            width:180px;
+           margin: 5px;
+           border:2px solid #cccccc;
+        }
+        div.gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.gallery-item:hover {
+            border:2px solid #777777;
+        }
+
+        div.gallery-item div.desc{
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="images/1 - nice-rock-jungle-mountain-wallpapers-for-backgroung.jpg" target="_blank" data-lightbox="roadtrip">
+                    <img src="images/1 - nice-rock-jungle-mountain-wallpapers-for-backgroung.jpg" alt="">
+                </a>
+                
+                <div class="desc">Lorem ipsum dolor sit </div>
+            </div>
+
+             <div class="gallery-item">
+                <a href="images/2 - lake_forest_snow_130421_1920x1080.jpg" target="_blank" data-lightbox="roadtrip">
+                <img src="images/2 - lake_forest_snow_130421_1920x1080.jpg" alt="">
+                 </a>
+                <div class="desc">Lorem ipsum dolor sit </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="images/3 - himalay-snowing-scene-mindblowing-location-for-visit-hdimages.jpg" alt="">
+                <div class="desc">Lorem ipsum dolor sit </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="images/7 - pexels-luisdelrio-15286.jpg" alt="">
+                <div class="desc">Lorem ipsum dolor sit </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="images/5 - pexels-themob000-28428592.jpg" alt="">
+                <div class="desc">Lorem ipsum dolor sit </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="images/6 - vecteezy_vibrant-macaw-perching-on-branch-showcasing-beauty-in_29765169.jpg" alt="">
+                <div class="desc">Lorem ipsum dolor sit </div>
+            </div>
+        </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+
+</body>
+</html>
