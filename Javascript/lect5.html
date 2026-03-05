@@ -25,24 +25,28 @@
         myfun();
    
         function multipy(a,b){
+            if(b==undefined)
+        {
+            b=2;
+        }
             let c=a*b;
             return c;
-        //  console.log(c);
+   
         }
+            console.log("The answer of a and b is " + multipy(3) )
+    //    let result1 =  multipy(2,3);
+    //         console.log(`The result is ${result1}`);
 
-       let result1 =  multipy(2,3);
-            console.log(`The result is ${result1}`);
-
-              let result2 =  multipy(6,7);
-            console.log(`The result is ${result2}`);
+    //           let result2 =  multipy(6,7);
+    //         console.log(`The result is ${result2}`);
 
 
-            function toCelsius(f) {
-                return (5/9) * (f-32);
-                } 
+            // function toCelsius(f) {
+            //     return (5/9) * (f-32);
+            //     } 
 
-            let text = "The temperature is " + toCelsius(98) + " Celsius.";
-            console.log(text);
+            // let text = "The temperature is " + toCelsius(98) + " Celsius.";
+            // console.log(text);
     </script>
 </body>
 </html>
